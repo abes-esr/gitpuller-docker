@@ -17,7 +17,7 @@ git clone https://github.com/facebook/docusaurus.git my-gitclonned-folder/
 # run the gitpuller container
 docker run -d \
   -v $(pwd)/my-gitclonned-folder/:/folder-to-git-pull/ \
-  abesesr/gitpuller-docker:1.0.0
+  abesesr/gitpuller-docker:1.0.1
 ```
 
 ## Parameters

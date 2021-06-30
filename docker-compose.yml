@@ -4,7 +4,7 @@ services:
 
   abes-esr-gitpuller:
     build: ./image/
-    image: abesesr/gitpuller-docker:1.0.0
+    image: abesesr/gitpuller-docker:1.0.1
     container_name: abes-esr-gitpuller
     volumes:
       - ./:/folder-to-git-pull/:rw
