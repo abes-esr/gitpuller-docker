@@ -8,3 +8,5 @@ services:
     container_name: abes-esr-gitpuller
     volumes:
       - ./:/folder-to-git-pull/:rw
+        #      - /home/gully/.ssh/id_rsa:/root/.ssh/id_rsa.orig
+        #      - /home/gully/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub.orig

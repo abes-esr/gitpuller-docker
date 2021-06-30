@@ -23,3 +23,4 @@ docker run -d \
 ## Parameters
 
 - `/folder-to-git-pull/` : this is the internal folder where git pull will be executed continuously, this is a mandatory parameter, you have to mount the wanted git clonned folder on it as a volume
+- SSH keys needed for git pull, see example here: https://github.com/abes-esr/gitpuller-docker/blob/main/docker-compose.yml#L11
