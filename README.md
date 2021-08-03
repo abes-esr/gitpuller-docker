@@ -1,5 +1,7 @@
 # gitpuller-docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/gitpuller-docker.svg)](https://hub.docker.com/r/abesesr/gitpuller-docker/)
+
 A docker container in charge of continuously git pull a folder (every minutes).
 
 Why?
