@@ -8,14 +8,10 @@ RUN yum install -y cronie vim && \
 COPY ./crontab-tasks /etc/local/etc/cron.d/crontab-tasks
 RUN crontab /etc/local/etc/cron.d/crontab-tasks
 
-# git pull script
-RUN yum install -y git
+# git pull script (sudo is used for GIT_AS_UID feature)
+RUN yum install -y git sudo
 RUN git config --global pull.rebase false
 COPY ./gitpuller.sh /usr/local/bin/gitpuller.sh
-
-# for git clone through ssh stuff
-RUN mkdir -p /root/.ssh/
-RUN echo "Host *" > /root/.ssh/config && echo "StrictHostKeyChecking no" >> /root/.ssh/config
 
 # Cron and docker. See also:
 # https://sudonull.com/post/80071-Running-cron-inside-a-docker-container-Redmadrobots-blog
