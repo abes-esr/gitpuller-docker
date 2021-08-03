@@ -4,7 +4,7 @@ services:
 
   abes-esr-gitpuller:
     build: ./image/
-    image: abesesr/gitpuller-docker:1.0.1
+    image: abesesr/gitpuller-docker:1.1.0
     container_name: abes-esr-gitpuller
     environment:
       GIT_AS_UID: 0

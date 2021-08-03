@@ -18,7 +18,7 @@ git clone https://github.com/facebook/docusaurus.git my-gitclonned-folder/
 docker run -d \
   -e GIT_AS_UID=$(id -u) -e GIT_AS_GID=$(id -g) \
   -v $(pwd)/my-gitclonned-folder/:/folder-to-git-pull/ \
-  abesesr/gitpuller-docker:1.0.1
+  abesesr/gitpuller-docker:1.1.0
 ```
 
 ## Parameters
