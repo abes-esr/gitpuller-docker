@@ -28,7 +28,7 @@ docker run -d \
 - `GIT_AS_UID` : this is the linux user id (uid) to use to run the git pull on the `/folder-to-git-pull/` folder. This parameter is usefull if you do not want to change root permission on your git pulled repository (optional - default `0`)
 - `GIT_AS_GID` : this is the linux group id (gid) to use to run the git pull on the `/folder-to-git-pull/` folder (optional - default `0`)
 - `/folder-to-git-pull/` : this is the internal folder where git pull will be executed continuously, this is a mandatory parameter, you have to mount the wanted git clonned folder on it as a volume (mandatory)
-- SSH keys needed for git pull, see example here: https://github.com/abes-esr/gitpuller-docker/blob/main/docker-compose.yml#L11 (optional)
+- SSH keys needed for git pull, see example here:https://github.com/abes-esr/gitpuller-docker/blob/8415b91043ad499a15adce3588da179d07e61aff/docker-compose.yml#L13-L15 (optional)
 
 
 ## Developement
