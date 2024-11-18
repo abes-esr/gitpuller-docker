@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # initialize default values for parameters
-export GIT_AS_UID=${GIT_AS_UID:='0'}
-export GIT_AS_GID=${GIT_AS_GID:='0'}
+export GIT_AS_UID=${GIT_AS_UID:-'0'}
+export GIT_AS_GID=${GIT_AS_GID:-'0'}
 
 env >> /etc/environment
 
